@@ -7,21 +7,48 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="GosmickSans/stylesheet.css" media="screen" title="no title">
   <link rel="stylesheet" href="Komika-Title/komikaTitle.css" media="screen" title="no title">
+  <link rel="stylesheet" href="Ailerons/stylesheet.css" media="screen" title="no title">
   <link rel="stylesheet" href="normalize.css" media="screen" title="no title">
   <link rel="stylesheet" href="index.css" media="screen" title="no title">
   <title>Load your Comic</title>
 </head>
 
 <body>
-  <h1>Get Your Random Comic!</h1>
-  <div class="search">
-    <input id="pageReq" type="text" name="name" placeholder="'cars'">
-    <button id="loadReq" type="button" name="button">Load It!</button>
-  </div>
-  <div class="content">
+  <content>
+    <header class="header">
+      <h1 class="header-welcome">Get Your Random Comic!</h1>
+      <nav>
+        <ul class="header-navigation">
+          <li class="header-navigationitem">
+            <a href="http://www.marvel.com" class="header-navigationlink" target="_blank">MARVEL</a>
+          </li>
+          <li class="header-navigationitem">
+            <a href="http://marvel.com/comics" class="header-navigationlink" target="_blank">Shop the Comics</a>
+          </li>
+          <!-- <li class="header-navigationitem">
+            <a href="#" class="header-navigationlink"></a>
+          </li> -->
+        </ul>
+      </nav>
+      <p class="header-text">
+        Welcome to the MARVEL world! Below you are given a field where you can enter in any character (villian or hero!) present in MARVEL comics and be given a random issue of a comic where they appear. Enjoy your comic!
+      </p>
+      <div class="search">
+        <input class="pageReq" type="text" name="name" placeholder="Enter your character">
+        <button class="loadReq" type="button" name="button">Search</button>
+      </div>
+    </header>
+    <div class="content_background">
+      <div class="content">
 
+      </div>
+    </div>
+  </content>
+  <div class="footer">
+    <a href="www.marvel.com" class="footer-link">
+      Data provided by Marvel. © 2016 MARVEL
+    </a>
   </div>
-
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
   <script src="src/index.js" charset="utf-8"></script>
