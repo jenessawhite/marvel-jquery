@@ -15,9 +15,9 @@
 
 <body>
   <content>
-    <header class="header">
+    <header class="header" role="banner">
       <h1 class="header-welcome">Get Your Random Comic!</h1>
-      <nav>
+      <nav role="navigation">
         <ul class="header-navigation">
           <li class="header-navigationitem">
             <a href="http://www.marvel.com" class="header-navigationlink" target="_blank">MARVEL</a>
@@ -33,18 +33,18 @@
       <p class="header-text">
         Welcome to the MARVEL world! Below you are given a field where you can enter in any character (villian or hero!) present in MARVEL comics and be given a random issue of a comic where they appear. Enjoy your comic!
       </p>
-      <div class="search">
-        <input class="pageReq" type="text" name="name" placeholder="Enter your character">
+      <div class="search" role="search">
+        <label for="Enter your character"><input class="pageReq" type="text" name="name" placeholder="Enter your character"></label>
         <button class="loadReq" type="button" name="button">Search</button>
       </div>
     </header>
-    <div class="content_background">
+    <div class="content_background" role="main">
       <div class="content">
 
       </div>
     </div>
   </content>
-  <div class="footer">
+  <div class="footer" role="contentinfo">
     <a href="www.marvel.com" class="footer-link">
       Data provided by Marvel. © 2016 MARVEL
     </a>
