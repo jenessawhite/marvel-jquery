@@ -186,13 +186,26 @@ label {
 
 .name {
   font-size: 4em;
-  margin: 0;
+	font-family: 'Ailerons';
+  letter-spacing: 0.1px;
+	text-decoration: none;
+	color: #d80404;
+}
+
+.name:visited {
+	cursor: pointer;
+	color: #d80404;
+}
+
+.name:hover {
+	cursor: pointer;
+	color: #010101;
 }
 
 .comic {
   font-size: 1.5em;
   text-decoration: none;
-  color: #010101;
+	color: #d80404;
 }
 
 .comic-link {

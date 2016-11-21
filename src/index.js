@@ -1,3 +1,4 @@
+
 function loadIt(e) {
   e.preventDefault();
 
@@ -28,7 +29,7 @@ function loadIt(e) {
               //courtesy of
               group.append($('<p class="credit"></p>').text('Data provided by Marvel. © 2016 MARVEL'));
               //name
-              group.append($('<h1 class="name"></h1>').text(res.name));
+              group.append($('<a class="name" target="_blank"></a>').attr('href', res.urls[0].url).text(res.name));
               //description
               group.append($('<p class="description"></p>').text(res.description));
               //number of comics
