@@ -16,7 +16,7 @@
 <body>
   <content>
     <header class="header" role="banner">
-      <h1 class="header-welcome">Get Your Random Comic!</h1>
+      <h1 class="header-welcome">Comic of the Day!</h1>
       <nav role="navigation">
         <ul class="header-navigation">
           <li class="header-navigationitem">
@@ -25,18 +25,20 @@
           <li class="header-navigationitem">
             <a href="http://marvel.com/comics" class="header-navigationlink" target="_blank">Shop the Comics</a>
           </li>
-          <!-- <li class="header-navigationitem">
-            <a href="#" class="header-navigationlink"></a>
-          </li> -->
         </ul>
       </nav>
       <p class="header-text">
-        Welcome to the MARVEL world! Below you are given a field where you can enter in any character (villian or hero!) present in MARVEL comics and be given a random issue of a comic where they appear. Enjoy your comic!
+        Welcome to the MARVEL world! Below you are given a field where you can enter in any character (villian or hero!) present in MARVEL comics and be given a random issue of a comic where they appear.
+        <br> Enjoy your comic!
       </p>
-      <div class="search" role="search">
-        <label for="Enter your character"><input class="pageReq" type="text" name="name" placeholder="Enter your character"></label>
-        <button class="loadReq" type="button" name="button">Search</button>
-      </div>
+      <!-- <div class="search" > -->
+      <form class="search" role="search">
+        <label for="character">Character Search</label>
+        <input class="pageReq" id="character" type="text" name="name" placeholder="Enter your character">
+        <input class="loadReq" type="submit" name="name" value="Search">
+      </form>
+      <!-- <button class="loadReq" type="button" name="button">Search</button> -->
+      <!-- </div> -->
     </header>
     <div class="content_background" role="main">
       <div class="content">

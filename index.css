@@ -105,14 +105,23 @@ content{
   border-bottom: 1px solid #d80404;
 }
 
+.header-text {
+	padding: 0 2rem;
+}
+
 .search {
   margin-bottom: 1rem;
 }
 
+label {
+	top: -9999px;
+	left: -9999px;
+	position: absolute;
+}
+
 .pageReq {
-  width: 30%;
+  min-width: 30%;
   outline: none;
-  /*background-color: #fafafa;*/
   color: #d80404;
   border: 1px solid #d80404;
   border-radius: 3px;
@@ -120,8 +129,7 @@ content{
 }
 
 .pageReq:focus {
-  outline: none;
-  /*background-color: #fafafa;*/
+  outline: 3px solid red;
   color: #d80404;
   border: 1px solid #d80404;
   border-radius: 3px;
@@ -146,6 +154,10 @@ content{
   border-radius: 3px;
   padding: 0.5rem;
   cursor: pointer;
+}
+
+.loadReq:focus {
+	outline: 3px solid black;
 }
 
 .content{
@@ -183,18 +195,6 @@ content{
   color: #010101;
 }
 
-.comic:visited {
-  font-size: 1.5em;
-  text-decoration: none;
-  color: #010101;
-}
-
-.comic:hover {
-  font-size: 1.5em;
-  text-decoration: none;
-  color: #d80404;
-}
-
 .comic-link {
   min-width: 15%;
   outline: none;
@@ -202,7 +202,7 @@ content{
   background-color: #d80404;
   border: 1px solid #d80404;
   border-radius: 3px;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   margin: 1rem 1rem;
 }
 
@@ -212,8 +212,12 @@ content{
   color: #d80404;
   border: 1px solid #d80404;
   border-radius: 3px;
-  padding: 0.5rem;
+	padding: 0.5rem 1rem;
   cursor: pointer;
+}
+
+hr {
+	margin: 2rem 0;
 }
 
 .footer {
